@@ -1,8 +1,12 @@
 package MediathequeCenter.controller;
 
+import MediathequeCenter.model.User;
+
+import java.util.List;
+
 public class LoginController {
-    User[] userList;
+    List<User> userList;
     private String getInput(){return}
     private User check(String input) {return}
-    public User login(){}
+    public User login(){return }
 }

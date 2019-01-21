@@ -1,18 +1,20 @@
 package MediathequeCenter.controller;
 
-import MediathequeCenter.model.MediaItems;
+import MediathequeCenter.model.*;
 import MediathequeCenter.view.ComunicationPrinter;
 import MediathequeCenter.view.MenuPrinter;
+
+import java.util.List;
 
 public class MainController {
     private User currentUser;
     private String currentPosition;
-    private Book[] listOfBooks;
-    private Movie[] listOfMovies;
-    private Album[] listOfAlbums;
-    private MediaItems[] toRentList;
-    private ComunicationPrinter;
-    private MenuPrinter;
+    private List<Book> listOfBooks;
+    private List<Movie> listOfMovies;
+    private List<Album> listOfAlbums;
+    private List<MediaItems> toRentList;
+    public ComunicationPrinter comunicationPrinter;
+    public MenuPrinter menuPrinter;
 
     public User getCurrentUser() {
         return currentUser;
@@ -22,19 +24,19 @@ public class MainController {
         return currentPosition;
     }
 
-    public Book[] getListOfBooks() {
+    public List<Book> getListOfBooks() {
         return listOfBooks;
     }
 
-    public Movie[] getListOfMovies() {
+    public List<Movie> getListOfMovies() {
         return listOfMovies;
     }
 
-    public Album[] getListOfAlbums() {
+    public List<Album> getListOfAlbums() {
         return listOfAlbums;
     }
 
-    public MediaItems[] getToRentList() {
+    public List<MediaItems> getToRentList() {
         return toRentList;
     }
 
